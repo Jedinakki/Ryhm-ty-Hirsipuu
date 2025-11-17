@@ -1,17 +1,23 @@
 import random
 
 class SanaValinta:
-    def valitse_sana(self):
-        with open('sanat.txt', 'r') as tiedosto:
-            sanat = []
+    def __init__(self, tiedostonimi='sanat.txt'):
+        self.tiedostonimi = tiedostonimi
+        self.sanat = self.lataa_sanat()
+
+    def lataa_sanat(self):
+        sanat = []
+        with open(self.tiedostonimi, 'r') as tiedosto:
             for rivi in tiedosto:
                 rivi = rivi.strip()
                 if rivi and not rivi.startswith('#'):
                     sanat.append(rivi.upper())
-            return random.choice(sanat)
+        return sanat
+
+    def valitse_sana(self):
+        return random.choice(self.sanat)
 
     def nayta_alaviivat(self, sana):
-
         return ' '.join('_' for _ in sana)
 
 if __name__ == "__main__":
