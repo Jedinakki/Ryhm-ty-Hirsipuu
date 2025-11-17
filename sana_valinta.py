@@ -20,8 +20,12 @@ class SanaValinta:
     def nayta_alaviivat(self, sana):
         return ' '.join('_' for _ in sana)
 
+    def muunna(self):
+        return self.sanat[0]
+
 if __name__ == "__main__":
     sana_valinta = SanaValinta()
     valittu_sana = sana_valinta.valitse_sana()
     print(f"Arvaa sana: ")
     print(sana_valinta.nayta_alaviivat(valittu_sana))
+    print(sana_valinta)
