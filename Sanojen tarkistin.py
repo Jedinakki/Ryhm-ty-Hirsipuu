@@ -4,9 +4,11 @@ class Tarkistin:
         self.paljastus = "_"*len(sana)
         self.kaytetyt_merkit = []
     
-    def tarkista(self,merkki):
+    def tarkista(self,merkki:str):
+        merkki=merkki.upper()
         if merkki in self.kaytetyt_merkit:
-            raise ValueError("merkki on jo listalla")
+            print("merkki on jo listalla")
+            return
         if merkki in self.sana:
             self.paljasta(merkki)
             self.kaytetyt_merkit.append(merkki)
@@ -23,6 +25,8 @@ class Tarkistin:
                 lista[paikka]=merkki
                 self.paljastus = "".join(lista)
             paikka +=1
-                
+
+    def anna_kirjaimet(self):
+        print(", ".join(self.kaytetyt_merkit))
     def __str__(self):
         return self.paljastus
