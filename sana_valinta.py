@@ -2,6 +2,7 @@ import random
 
 class SanaValinta:
     def __init__(self, tiedostonimi='sanat.txt'):
+        self.valittu_sana = ""
         self.tiedostonimi = tiedostonimi
         self.sanat = self.lataa_sanat()
 
@@ -15,13 +16,12 @@ class SanaValinta:
         return sanat
 
     def valitse_sana(self):
-        return random.choice(self.sanat)
+        self.valittu_sana = random.choice(self.sanat)
+        return self.valittu_sana
 
-    def nayta_alaviivat(self, sana):
-        return ' '.join('_' for _ in sana)
 
-    def muunna(self):
-        return self.sanat[0]
+    
+
 
 if __name__ == "__main__":
     sana_valinta = SanaValinta()
