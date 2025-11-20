@@ -1,2 +1,3 @@
-Miika - Tein sanat.txt tiedoston johon lisäsin kymmenen sanaa, ja sana_valinta.py ohjelman joka valitsee satunnaisesti yhden sanan sanat.txt tiedostosta.
-sana_valinta.py koodia myös muokattiin hieman yhdessä, ja Hirsipuu.py tehtiin yhdessä
+Miika - Tein sanat.txt tiedoston jossa on sanat joita pelissä arvaillaan, ja lisäsin sinne kymmenen sanaa 
+Tein myös sana_valinta.py koodin joka valitsee satunnaisesti yhden sanan sanat.txt tiedostosta, tätä koodia myös muokattiin hieman myöhemmin yhdessä
+Itse peli eli Hirsipuu.py tehtiin yhdessä joka toteuttaa hirsipuu pelin hyödyntämällä peliä varten tehtyjä luokkia.
