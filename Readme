@@ -1,3 +1,6 @@
 Miika - Tein sanat.txt tiedoston jossa on sanat joita pelissä arvaillaan, ja lisäsin sinne kymmenen sanaa 
 Tein myös sana_valinta.py koodin joka valitsee satunnaisesti yhden sanan sanat.txt tiedostosta, tätä koodia myös muokattiin hieman myöhemmin yhdessä
 Itse peli eli Hirsipuu.py tehtiin yhdessä joka toteuttaa hirsipuu pelin hyödyntämällä peliä varten tehtyjä luokkia.
+
+Juho - Tein Hirsipuun_piirto.py ohjelman joka tulostaa hirsipuun kuvan joka vaiheessa.
+Tein myös Sanojen_tarkistin.py ohjelman joka tarkistaa onko annettu kirjain osa sanaa ja jos on paljastaa kirjaimen käyttäjälle sanassa. Ohjelma myös tallentaa kaikki käytetet kirjaimet ja antaa ne käyttäjälle.
